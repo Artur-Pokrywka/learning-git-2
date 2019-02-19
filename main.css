@@ -1,6 +1,7 @@
 body {
     background: lightblue;
-    font-family: Tahoma, sans-serif
+    font-family: Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 .song-container {
