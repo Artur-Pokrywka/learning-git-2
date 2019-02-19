@@ -1,3 +1,8 @@
+body {
+    background: lightblue;
+    font-family: Tahoma, sans-serif
+}
+
 .song-container {
     margin: 10px 25%;
     width: 50%;
