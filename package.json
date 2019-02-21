@@ -8,6 +8,8 @@
     "test:html": "globstar nu-html-checker *.html",
     "init-project": "npm install && mkdir sass css vendor images js && touch README.md index.html sass/style.scss js/script.js && curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
+
+    "build:clean": "rimraf css",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
@@ -41,7 +43,6 @@
   "dependencies": {
     "chokidar": "^2.1.2",
     "postcss-cli-simple": "^3.0.0",
-    "rimraf": "^2.6.3",
     "slug": "^1.0.0",
     "sshpk": "^1.16.1",
     "superagent": "^4.1.0"
