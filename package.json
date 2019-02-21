@@ -13,7 +13,6 @@
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
     "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
-    
     "watch:browsersync": "node_modules/.bin/browser-sync start --server --files css/*.css *.html --watch"
   },
   "repository": {
@@ -42,6 +41,7 @@
   "dependencies": {
     "chokidar": "^2.1.2",
     "postcss-cli-simple": "^3.0.0",
+    "rimraf": "^2.6.3",
     "slug": "^1.0.0",
     "sshpk": "^1.16.1",
     "superagent": "^4.1.0"
