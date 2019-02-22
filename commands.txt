@@ -2,4 +2,4 @@
 autoprefixer-cli -o style.prefixed.css style.css
 
 # For HTML Checker:
-cli [options] <files/urls ...>
+globstar nu-html-checker *.html
