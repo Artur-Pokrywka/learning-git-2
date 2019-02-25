@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npm run test:html",
     "test:html": "globstar nu-html-checker *.html",
+    "run":"npm-run-all",
     "init-project": "npm install && mkdir sass css vendor images js && touch README.md index.html sass/style.scss js/script.js && curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
     "build:clean": "rimraf css/*.css",
