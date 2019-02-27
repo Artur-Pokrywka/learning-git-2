@@ -18,7 +18,7 @@
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
     "watch:sassprefixer": "onchange scss/*.scss -- npm-run-all sassprefixer:*",
     "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css scss",
-    "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css",  
+    "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css",
     "watch:browsersync": "node_modules/.bin/browser-sync start --server --files css/*.css *.html --watch"
   },
   "repository": {
